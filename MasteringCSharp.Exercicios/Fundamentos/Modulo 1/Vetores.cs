@@ -127,5 +127,32 @@ namespace MasteringCSharp.Exercicios
 
         }
         #endregion
+
+        #region Vetores - Exercicio Nivel 3
+
+        static int[] v1 = { 41, 72, 39, 4, 35 };
+        static int[] v2 = { 0, 0, 0, 0, 0 };
+
+        public static void CopiaVetor()
+        {
+            v2 = v1;
+
+            for (int i = 0;i < v2.Length; i++)
+            {
+                Console.WriteLine(v2[i]);
+            }
+        }
+
+
+        //Em andamento.
+        static public void InverteVetor()
+        {
+            for (int i = 0;i < v1.Length; i++)
+            {
+
+            }
+        }
+
+        #endregion
     }
 }
