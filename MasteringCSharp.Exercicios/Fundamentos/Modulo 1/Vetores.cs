@@ -143,16 +143,29 @@ namespace MasteringCSharp.Exercicios
             }
         }
 
-
-        //Em andamento.
-        static public void InverteVetor()
+        int ExibirMaiorVetor(int[] v)
         {
-            for (int i = 0;i < v1.Length; i++)
+            int maior = v[0];
+            for (int i = 1; i < v.Length; i++)
             {
+                maior = v[i];
+            }
+            return maior;
+        }
+        int[] vetor = { 98, 45, 12, 187, 16 };
+        int ProcuraValorVetor(int[] v, int e)
+        {
+            int valorVetor = e;
+            for (int i = 0; i < v.Length; i++)
+            {
+                if (valorVetor == v[i])
+                {
+                    return v[i];
+                }
 
             }
+            return -1;
         }
-
         #endregion
     }
 }
